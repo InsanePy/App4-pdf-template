@@ -5,11 +5,10 @@ pdf.set_auto_page_break(auto=False,margin=0)
 df = pandas.read_csv("topics.csv")
 
 for index, row in df.iterrows():
-    x1 =10
-    y1=20
-    x2=200
-    y2=20
-    step=10
+    x1 = 10
+    y1 = 20
+    x2 = 200
+    y2 = 20
 
     # Master Page
     pdf.add_page()
