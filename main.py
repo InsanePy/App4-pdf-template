@@ -11,7 +11,7 @@ for index, row in df.iterrows():
     y2=20
     step=10
 
-    #Master Page
+    # Master Page
     pdf.add_page()
 
     pdf.set_font(family="Times", style="B", size=12)
@@ -38,7 +38,7 @@ for index, row in df.iterrows():
         pdf.set_text_color(180, 180, 180)
         pdf.cell(w=0, h=10, txt=row["Topic"], align="R")
 
-        #Adding lines to pdf
+        # Adding lines to pdf
         for i in range(20, 298, 10):
             pdf.line(x1, i, x2, i)
 
